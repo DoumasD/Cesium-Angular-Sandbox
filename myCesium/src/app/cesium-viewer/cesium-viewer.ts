@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import * as Cesium from 'cesium';
 
 @Component({
@@ -28,7 +28,7 @@ export class CesiumViewer implements OnInit, AfterViewInit{
             destination: Cesium.Cartesian3.fromDegrees(-91.6697,41.9828,10000), // Longitude, Latitude, Height in meters
           }
   );
-  viewer.scene.requestRenderMode = true;
+
  
   }
 
